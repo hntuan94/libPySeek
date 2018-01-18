@@ -167,7 +167,7 @@ cv::Mat thSeekThermalPro::process(const cv::Mat& in) {
 	//std::cerr << "in: " << in << std::endl;
 	//std::cerr << "sz: " << in.size() << std::endl;
 	//std::cerr << "Returning transpose" << std::endl;
-	return in.t();
+	return in;
 }
 
 cv::Mat thSeekThermalPro::seekGetRawCvFrame()
