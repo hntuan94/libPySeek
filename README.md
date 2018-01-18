@@ -51,6 +51,8 @@ while True:
 
 cv2.destroyAllWindows()
 ```
+Note: Please use sudo yourcode.py
+
 ## Getting USB access
 
 You need to add a udev rule to be able to run the program as non root user:
