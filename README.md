@@ -18,6 +18,11 @@ Dependencies:
 * libusb-1.0-0-dev
 * boost_1_66_0
 
+Install libusb
+```
+sudo apt-get install libusb-1.0-0-dev
+```
+
 Install boost
 ```
 wget https://sourceforge.net/projects/boost/files/boost/1.66.0/boost_1_66_0.tar.bz2
@@ -78,7 +83,8 @@ You need to add a udev rule to be able to run the program as non root user:
 Udev rule:
 
 ```
-SUBSYSTEM=="usb", ATTRS{idVendor}=="289d", ATTRS{idProduct}=="XXXX", MODE="0666", GROUP="users"
+sudo vi /etc/udev/rules.d/100-usb.rules
+SUBSYSTEM=="usb", ATTRS{idVendor}=="289d", ATTRS{idProduct}=="0011", MODE="0666", GROUP="users"
 ```
 
 Replace 'XXXX' with:
