@@ -18,6 +18,24 @@ Dependencies:
 * libusb-1.0-0-dev
 * boost_1_66_0
 
+Install boost
+```
+wget https://sourceforge.net/projects/boost/files/boost/1.66.0/boost_1_66_0.tar.bz2
+tar xjf boost_1_66_0.tar.bz2
+cd boost_1_66_0
+./bootstrap.sh
+sudo ./b2 install
+```
+Note:
+1. you can see all available libraries.
+```
+./bootstrap.sh --show-libraries
+```
+2. You can also install the library that you need. It saves time.
+```
+./bootstrap.sh --with-libraries=python
+```
+
 ```
 cd libPySeek
 vi src/CMakeLists.txt
