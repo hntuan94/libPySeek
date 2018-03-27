@@ -29,7 +29,7 @@ wget https://sourceforge.net/projects/boost/files/boost/1.66.0/boost_1_66_0.tar.
 tar xjf boost_1_66_0.tar.bz2
 cd boost_1_66_0
 ./bootstrap.sh
-sudo ./b2 install
+./b2 install
 ```
 Note:
 1. you can see all available libraries.

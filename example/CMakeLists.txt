@@ -14,7 +14,7 @@ include_directories (
 ## Link libraries
 link_libraries (
     thSeekThermalPro_static
-    -lboost_program_options
+    #-lboost_program_options
     ${OpenCV_LIBRARIES}
     -lusb-1.0
 )
